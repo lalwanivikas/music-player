@@ -1,0 +1,528 @@
+/*
+ FusionCharts JavaScript Library
+ Copyright FusionCharts Technologies LLP
+ License Information at <http://www.fusioncharts.com/license>
+ FusionCharts JavaScript Library
+ Copyright FusionCharts Technologies LLP
+ License Information at <http://www.fusioncharts.com/license>
+*/
+
+/* Common CSS Styles section begins */
+
+body {
+    background: #ffffff;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.clearboth {
+    clear: both;
+}
+/* Common CSS Styles section ends */
+
+#wrapper {
+    width: 750px;
+    margin: 0 auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Verdana;
+    font-size: 14px;
+    padding: 0;
+}
+/* Header section CSS begins */
+
+.header {
+    padding: 11px 0 9px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #979797;
+}
+.logo {
+    float: left;
+    padding-right: 25px;
+}
+.download-code-link {
+    background-color: #594883;
+    border-radius: 2px;
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+/* Header section CSS ends */
+
+#container {
+    padding: 21px 0 0 0;
+}
+/* Dashboard title section begins */
+
+.intro-text {
+    font-size: 13px;
+    color: #333333;
+    line-height: 18px;
+    text-align: center;
+}
+.dashboard-title {
+    font-family: "AvenirNext-Medium", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+#dashboard-caption, #no-support-dashboard-caption {
+    font-family: "AvenirNext-Regular", Helvetica, Arial, Verdana, sans-serif;
+    margin-bottom: 26px;
+    font-size: 14px;
+}
+#no-support-dashboard-caption {
+    display: none;
+}
+#dashboard-detail, #no-support-dashboard-detail {
+    font-family: "AvenirNext-Regular", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 13px;
+    clear: both;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 23px;
+    clear: both;
+    margin-top: 31px;
+    padding: 10px;
+}
+#no-support-dashboard-detail {
+    display: none;
+}
+/* Dashboard title section ends */
+
+/*Player section begins */
+
+#player {
+    position: relative;
+    background: #272A2E;
+}
+#playlist {
+    width: 191px;
+    height: 416px;
+    float: left;
+    background: #222326;
+}
+#playlist-title {
+    height: 18px;
+    background: #363636;
+    padding: 9px 0 11px 9px;
+}
+#song-list-container {
+    background: #222326;
+    padding: 1px 0 2px 0;
+}
+#song-list-container li a {
+    padding-left: 9px;
+}
+#song-list {
+    list-style: none;
+    font-family: "AvenirNext-Regular", Helvetica, Arial, Verdana;
+    font-size: 12px;
+    color: #CCCCCC;
+    line-height: 25px;
+}
+#song-list a {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+#song-list a:visited {
+    color: #CCCCCC;
+}
+#current-song, #current-song-pause {
+    background: #000000;
+}
+#current-song-pause a:before {
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    float: right;
+    margin-top: 7px;
+    margin-right: 7px;
+    border-style: solid;
+    border-width: 5.5px 0 5.5px 9px;
+    border-color: transparent transparent transparent #a1bd00;
+}
+#current-song a:before {
+    width: 2px;
+    height: 8px;
+    content: "";
+    background: #222326;
+    display: block;
+    float: right;
+    margin-top: 7px;
+    margin-right: 7px;
+    border-style: solid;
+    border: 0 2px;
+    border-color: #a1bd00;
+    border-top: 0;
+    border-bottom: 0;
+}
+#playlist-title h2 {
+    font-family: "AvenirNext-Regular", Helvetica, Arial, Verdana;
+    font-size: 13px;
+    color: #999999;
+    line-height: 18px;
+}
+#equalizer {
+    width: 540px;
+    height: 406px;
+    padding: 10px 0 0 19px;
+    float: left;
+}
+#current-song-title {
+    font-family: "AvenirNext-Medium", Helvetica, Arial, Verdana;
+    font-size: 13px;
+    color: #999999;
+    line-height: 18px;
+    height: 18px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #444444;
+}
+#chart-holder {
+    padding: 12px 0 9px 0;
+}
+#player-controls {
+    background: #222326;
+    padding: 4px 18px 5px 18px;
+    height: 36px;
+    border-top: 2px solid #36383C;
+}
+.prev-next-bar {
+    width: 3px;
+    height: 14px;
+    background: #666666;
+}
+#previous-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 12.1px 7px 0;
+    border-color: transparent #666666 transparent transparent;
+}
+#previous-button, #next-button {
+    cursor: pointer;
+    margin-top: 11px;
+}
+#play-pause-button {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin: 0 15px;
+}
+#play-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8.3px 0 8.3px 13.9px;
+    margin: 10px 9px 11px 14px;
+    border-color: transparent transparent transparent #ffffff;
+}
+#pause-bar-container {
+    display: none;
+}
+.pause-bar {
+    height: 14px;
+    width: 2px;
+    background: #ffffff;
+    margin: 11px 3px 0 15px;
+}
+.pause-bar:nth-child(2) {
+    margin-left: 0;
+}
+#next-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 12.1px;
+    border-color: transparent transparent transparent #666666;
+}
+#next-bar {
+    margin-left: 12.1px;
+}
+#audio-seeker {
+    width: 288px;
+    height: 5px;
+    margin: 18px 17px 17px 42px;
+    background: #3E3E40;
+    position: relative;
+    float: left;
+    border-radius: 40px;
+}
+#seeker-timer {
+    width: 0;
+    height: 5px;
+    background: #A0BD00;
+}
+#seeker-round {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #eeeeee;
+    margin-top: -4px;
+    position: absolute;
+    left: 0;
+}
+#volume-container {
+    width: 20px;
+    margin-right: 20px;
+}
+#volume-control-holder {
+    background: url("../img/volume_sprite.png") no-repeat 0 0;
+    width: 20px;
+    height: 19px;
+    margin: 11px 20px 9px 0;
+    cursor: pointer;
+}
+#volume-control {
+    display: none;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-left: -30px;
+    margin-top: -50px;
+    -webkit-appearance: none;
+    background: #3E3E40;
+    height: 6px;
+    width: 78px;
+    border-radius: 5px;
+    border: 2px solid #212121;
+}
+input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    background: #3E3E40;
+    border: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #878787;
+    border: 2px solid #212121;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    background: #878787;
+    border: 2px solid #212121;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#divider {
+    height: 38px;
+    width: 1px;
+    background: #000000;
+    border-right: 1px solid #333333;
+}
+#shuffle-container {
+    width: 207px;
+    margin: 10px 0 10px 14px;
+    font-family: "AvenirNext-Regular", Helvetica, Arial, Verdana;
+    font-size: 13px;
+    color: #999999;
+    line-height: 18px;
+}
+#shuffle-container > span:first-child {
+    margin-right: 9px;
+}
+#shuffle-on-container, #shuffle-off-container {
+    cursor: pointer;
+}
+#on-text {
+    margin-right: 4px;
+}
+.shuffle-bulb {
+    float: left;
+}
+#loading {
+    position: absolute;
+    top: 40%;
+    left: 61%;
+    z-index: 999;
+    color: #fff;
+    visibility: hidden;
+}
+#loading span {
+    margin-top: 8px;
+    margin-left: -9px;
+    display: inline-block;
+    color: #666;
+    font-size: 12px;
+}
+/* Spinner style begins */
+#spinner {
+    position: relative;
+    width: 24px;
+    height: 24px
+}
+.spinner-unit {
+    position: absolute;
+    background-color: #999;
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 4px;
+    -moz-animation-name: bounce_spinner;
+    -moz-animation-duration: 1.04s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: linear;
+    -webkit-border-radius: 4px;
+    -webkit-animation-name: bounce_spinner;
+    -webkit-animation-duration: 1.04s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: linear;
+    -ms-border-radius: 4px;
+    -ms-animation-name: bounce_spinner;
+    -ms-animation-duration: 1.04s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: linear;
+    -o-border-radius: 4px;
+    -o-animation-name: bounce_spinner;
+    -o-animation-duration: 1.04s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: linear;
+    border-radius: 4px;
+    animation-name: bounce_spinner;
+    animation-duration: 1.04s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+#spinner_1 {
+    left: 0;
+    top: 9px;
+    -moz-animation-delay: 0.39s;
+    -webkit-animation-delay: 0.39s;
+    -ms-animation-delay: 0.39s;
+    -o-animation-delay: 0.39s;
+    animation-delay: 0.39s;
+}
+#spinner_2 {
+    left: 3px;
+    top: 3px;
+    -moz-animation-delay: 0.52s;
+    -webkit-animation-delay: 0.52s;
+    -ms-animation-delay: 0.52s;
+    -o-animation-delay: 0.52s;
+    animation-delay: 0.52s;
+}
+#spinner_3 {
+    top: 0;
+    left: 9px;
+    -moz-animation-delay: 0.65s;
+    -webkit-animation-delay: 0.65s;
+    -ms-animation-delay: 0.65s;
+    -o-animation-delay: 0.65s;
+    animation-delay: 0.65s;
+}
+#spinner_4 {
+    right: 3px;
+    top: 3px;
+    -moz-animation-delay: 0.78s;
+    -webkit-animation-delay: 0.78s;
+    -ms-animation-delay: 0.78s;
+    -o-animation-delay: 0.78s;
+    animation-delay: 0.78s;
+}
+#spinner_5 {
+    right: 0;
+    top: 9px;
+    -moz-animation-delay: 0.91s;
+    -webkit-animation-delay: 0.91s;
+    -ms-animation-delay: 0.91s;
+    -o-animation-delay: 0.91s;
+    animation-delay: 0.91s;
+}
+#spinner_6 {
+    right: 3px;
+    bottom: 3px;
+    -moz-animation-delay: 1.04s;
+    -webkit-animation-delay: 1.04s;
+    -ms-animation-delay: 1.04s;
+    -o-animation-delay: 1.04s;
+    animation-delay: 1.04s;
+}
+#spinner_7 {
+    left: 9px;
+    bottom: 0;
+    -moz-animation-delay: 1.17s;
+    -webkit-animation-delay: 1.17s;
+    -ms-animation-delay: 1.17s;
+    -o-animation-delay: 1.17s;
+    animation-delay: 1.17s;
+}
+#spinner_8 {
+    left: 3px;
+    bottom: 3px;
+    -moz-animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s;
+    -ms-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+@-moz-keyframes bounce_spinner {
+    0% {
+        -moz-transform: scale(1)
+    }
+    100% {
+        -moz-transform: scale(.3)
+    }
+}
+@-webkit-keyframes bounce_spinner {
+    0% {
+        -webkit-transform: scale(1)
+    }
+    100% {
+        -webkit-transform: scale(.3)
+    }
+}
+@-ms-keyframes bounce_spinner {
+    0% {
+        -ms-transform: scale(1)
+    }
+    100% {
+        -ms-transform: scale(.3)
+    }
+}
+@-o-keyframes bounce_spinner {
+    0% {
+        -o-transform: scale(1)
+    }
+    100% {
+        -o-transform: scale(.3)
+    }
+}
+@keyframes bounce_spinner {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(.3)
+    }
+}
+/* Spinner style ends */
+
+/*Player section ends */
+
+/* Footer section begins */
+.footer {
+    padding: 15px 0px;
+    font-family: Verdana;
+    font-size: 10px;
+    color: #666;
+    line-height: 15px;
+}
+.footer a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+/* Footer section begins */
