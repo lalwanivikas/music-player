@@ -1,5 +1,5 @@
 #Music Player with Equalizer
-Music player with Equalizer in JavaScript.
+Music player with Equalizer in JavaScript: [Live Demo](http://lalwanivikas.github.io/music-player/)
 
 The music-player folder has the following folder structure:
 
