@@ -1,12 +1,3 @@
-/*
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
-*/
-
 /**
  * This file create a theme file for the dashboard. The cosmetics for the
  * different charts are defined here.

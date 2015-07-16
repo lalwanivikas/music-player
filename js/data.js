@@ -1,12 +1,3 @@
-/*
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
-*/
-
 /**
  * This file creates a global variable called "musicPlayerData"
  * It is an object the groups the data based on the type of charts we will

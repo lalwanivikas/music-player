@@ -1,11 +1,3 @@
-/*
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
-*/
 var context;
 //Custom event class used by audio player to raise custom events when the player is played or stopped
 function CustomEvent(type, callback) {

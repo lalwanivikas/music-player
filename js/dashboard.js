@@ -1,12 +1,3 @@
-/*
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
- FusionCharts JavaScript Library
- Copyright FusionCharts Technologies LLP
- License Information at <http://www.fusioncharts.com/license>
-*/
-
 /**
  * This is the controller file for the dashboard. It reads data from the data.js
  * file and prepares the chart objects.
